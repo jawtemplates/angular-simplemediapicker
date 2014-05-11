@@ -15,7 +15,7 @@ Add to your form this directive:
 ``` <div simplemediapicker name="NAME" ng-model="media"  ng-init="media = JSON.parse(\'' . addslashes(str_replace('"', '\'', $meta)) . '\');" ></div> ```
 
 
-You must have linked also mce-view.js (wordpress library).  
+In WP < 3.9 you have to linked also mce-view.js (wordpress library).  
 
 ``` wp_enqueue_script('mce-view'); ```
 
