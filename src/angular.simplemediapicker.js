@@ -2,7 +2,7 @@
  * Angular module simplemediapicker for wordpress media
  * 
  * @author jawtemplates
- * @version 1.0
+ * @version 1.1
  * @licence GNU-GPL
  */
 
@@ -51,7 +51,7 @@
             restrict: 'A',
             template: '<div class="simplemediapicker" >' +
                     '<input type="hidden"  name="{{ inputName }}" ng-model="componentPicker" value="{{ componentPicker }}" />' +
-                    '<img  ng-repeat="(is,soubor) in componentPicker" src="{{soubor.url}}" ng-show="mod" />' +
+                    '<img  ng-repeat="(is,soubor) in componentPicker" ng-src="{{soubor.url}}" ng-show="mod" />' +
                     '<ul ng-show="!mod"><li ng-repeat="(is,soubor) in componentPicker">{{soubor.url}}</li></ul>' +
                     '<div class"clear"></div>' +
                     '<div id="{{ inputName }}-insert" ng-click="open_media()" class="button jaw-insert-simplemedia add_media"><i class="icon-image2 "></i> Choose Image</div>' +
